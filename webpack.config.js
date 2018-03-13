@@ -26,8 +26,8 @@ const baseConfig = {
   resolve: {
     alias: {
       common: path.join(srcDir, 'common'),
-      gateway: path.join(srcDir, 'gateway'),
-      dashboard: path.join(srcDir, 'dashboard'),
+      lander: path.join(srcDir, 'Lander'),
+      dashboard: path.join(srcDir, 'Dashboard'),
       store: path.join(srcDir, 'store'),
       nodeModules: nodeModulesDir
     }

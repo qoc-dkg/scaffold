@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect, Provider} from 'react-redux'
 import {Route, BrowserRouter as Router} from 'react-router-dom'
-import Gateway from 'gateway/Gateway'
+import Lander from 'lander'
 import Loadable from 'react-loadable';
 
 const Dashboard = Loadable({
@@ -19,7 +19,7 @@ const App = props => {
       <Router>
         {props.hasSession
           ? <Dashboard />
-          : <Gateway />
+          : <Lander />
         }
       </Router>
     </Provider>

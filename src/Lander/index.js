@@ -2,7 +2,7 @@ import {connect} from 'react-redux'
 import React from 'react'
 import {login} from 'common/actions/session'
 
-class Gateway extends React.Component {
+class Lander extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -37,6 +37,7 @@ class Gateway extends React.Component {
           this.state.error !== '' &&
             <p>{this.state.error}</p>
         }
+        <h3>Login</h3>
         <div>
           <label>
             <strong>Username</strong>
@@ -66,4 +67,4 @@ const mapStateToProps = ({session}) => {
     error: session.sessionError
   }
 }
-export default connect(mapStateToProps, {login})(Gateway)
+export default connect(mapStateToProps, {login})(Lander)
